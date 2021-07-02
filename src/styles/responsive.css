@@ -1,0 +1,147 @@
+@media screen and (max-width: 499px) {
+  .logo{
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  nav {
+      z-index: 10;
+      background-color: #fff;
+      width: 80%;
+      position: absolute;
+      -webkit-transform: translate(-400px, 0);
+      transform: translate(-400px, 0);
+      transition: transform 0.3s ease;
+      border-radius: 0 0 10px 0;
+      padding: 10px;
+  }
+  .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+  }
+  .nav-list{
+    width: 100%;
+  }
+  .nav-item {
+      display: list-item;
+      width: 100%;
+      text-align: center;
+      transition: 0.5s ease-out;
+  }
+  .nav-item a{
+    transition: 0s;
+    color: black;
+    border-radius: 0;
+    width: 100%;
+  }
+  .nav-item:hover{
+    background-color: rgb(204, 204, 204);
+  }
+  .nav-item a:hover{
+    background-color: transparent;
+    color: black;
+  }
+  .hero{
+    padding: 30px;
+  }
+  .hero-title {
+    font-size: 30px;
+  }
+  .menu-list{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  header{
+    padding: 10px;
+  }
+  .header-menu {
+      display: none;
+  }
+  .logo{
+    flex-grow: 1;
+    font-size: 1em;
+    padding: 15px 10px;
+  }
+  nav{
+    flex-grow: 5;
+  }
+  .nav-item{
+    font-size: 0.7em;
+  }
+  .hero{
+    padding: 30px;
+  }
+  .menu-list{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 15px;
+  }
+}
+@media screen and (min-width: 600px) {
+  header{
+    padding: 0 20px;
+  }
+  .logo{
+    padding: 20px 10px;
+  }
+  header nav{
+    padding: 8px;
+  }
+  .restaurant{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 10px;
+  }
+  .restaurant h2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .restaurant-pics{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .restaurant-info{
+    padding: 0 20px;
+  }
+  .restaurant-desc{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media screen and (min-width: 700px) {
+}
+
+@media screen and (min-width: 800px) {
+  .menu-page{
+    padding: 30px;
+  }
+  .menu-list{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav-item{
+    margin: 5px 20px;
+    font-size: 0.8em;
+  }
+  .logo{
+    padding-left: 20px;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-page{
+    padding: 50px;
+  }
+  .menu-list{
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 0;
+  }
+}
